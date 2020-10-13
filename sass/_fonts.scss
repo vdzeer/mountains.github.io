@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Gilroy Ultra Light';
+  src: url('../fonts/Gilroy/Gilroy-UltraLight.eot');
+  src: url('../fonts/Gilroy/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-UltraLight.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chronicle';
+  src: url('../fonts/Chronicle_Display/ChronicleDisp-Roman.otf');
+  src: url('../fonts/Chronicle_Display/ChronicleDisp-Roman.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/Chronicle_Display/ChronicleDisp-Roman.woff') format('woff'),
+  url('../fonts/Chronicle_Display/ChronicleDisp-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin reg {
+  font-family: 'Gilroy Ultra Light';
+  font-weight: 400;
+}
+
+@mixin title {
+  font-family: 'Chronicle';
+  font-weight: 400;
+}
