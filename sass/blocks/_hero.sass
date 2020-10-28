@@ -1,0 +1,82 @@
+.hero
+  height: 100vh
+  // background: url('../img/hero/hero-bg.png') top -130px center / cover
+  position: relative
+  margin-bottom: 300px
+  &-block
+    position: absolute
+    max-width: 950px
+    top: 35%
+    left: 50%
+    transform: translate(-50%, -35%)
+  &__pretitle
+    color: $accent
+    position: relative
+    font-weight: 800
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 6px
+    text-transform: uppercase
+    margin-left: 100px
+    +reg
+    &::before
+      content: ''
+      position: absolute
+      width: 72px
+      height: 2px
+      background-color: $accent
+      top: 50%
+      left: -46%
+      transform: translate(0%, -50%)
+  &__title
+    margin: 35px 0
+    font-weight: 600
+    font-size: 88px
+    line-height: 100px
+    text-transform: capitalize
+    +title
+  &-scroll
+    display: flex
+    align-items: center
+    font-size: 18px
+    line-height: 22px
+    font-weight: bold
+    +reg
+    &__text
+      margin-right: 15px
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 65px 80px
+  &-logo
+    &__text
+      font-size: 32px
+      line-height: 38px
+      letter-spacing: 1px
+      +title
+  &-list
+    display: flex
+    align-items: center
+    &__item
+      margin-right: 40px
+      font-size: 18px
+      line-height: 22px
+      font-weight: bold
+      +reg
+      &:last-child
+        margin-right: 0
+  &-login
+    display: flex
+    align-items: center
+    cursor: pointer
+    &__ico
+      height: 24px
+      width: 24px
+    &__text
+      margin-left: 8px
+      font-size: 17px
+      line-height: 21px
+      font-weight: bold
+      +reg
